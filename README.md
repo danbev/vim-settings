@@ -33,3 +33,16 @@ The tree is just a buffer and you navigate as you would with a split view:
 	CTRL+W+h	Move to left view
 	CTRL+W+l	Move to right view
 
+
+### Math symbols
+To enter math (and greek) symbols in Vi you can use digraphs to see the available symbols:
+
+	:digraphs
+
+Lets say you want to display the delta symbol which in the table would look like this:
+
+	DE ∆  8710
+
+To get this symbol, press CTRL+k DE when in insert mode.
+
+
