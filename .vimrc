@@ -24,3 +24,4 @@ colorscheme distinguished
 set nu
 set shortmess+=I
 set ruler
+autocmd BufNewFile,BufRead *.json setf javascript
