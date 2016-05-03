@@ -33,6 +33,40 @@ The tree is just a buffer and you navigate as you would with a split view:
 	CTRL+W+h	Move to left view
 	CTRL+W+l	Move to right view
 
+### ctags
+Will enable you to index the tags (methods, classes, variables etc) and store the output 
+in a tags file.
+
+#### install ctags
+
+    brew install ctags
+
+#### index a directory
+ 
+    ctags -R .
+
+#### using tags
+
+    CTRL+]    jump to symbol
+    CTRL+T    go back up the tree
+
+Using ex mode:
+
+    :tag symbolname
+    :ta symbolname
+    :ts
+
+#### JavaScript
+Update your `~/.ctags` file to include:
+
+    --langdef=js
+    --langmap=js:.js
+    --regex-js=/([A-Za-z0-9._$]+)[ \t]*[:=][ \t]*\{/\1/,object/
+    --regex-js=/([A-Za-z0-9._$()]+)[ \t]*[:=][ \t]*function[ \t]*\(/\1/,function/
+    --regex-js=/function[ \t]+([A-Za-z0-9._$]+)[ \t]*\(([^)])\)/\1/,function/
+    --regex-js=/([A-Za-z0-9._$]+)[ \t]*[:=][ \t]*\[/\1/,array/
+    --regex-js=/([^= ]+)[ \t]*=[ \t]*[^"]'[^']*/\1/,string/
+    --regex-js=/([^= ]+)[ \t]*=[ \t]*[^']"[^"]*/\1/,string/
 
 ### Math symbols
 To enter math (and greek) symbols in Vi you can use digraphs to see the available symbols:
