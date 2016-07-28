@@ -25,3 +25,5 @@ set nu
 set shortmess+=I
 set ruler
 autocmd BufNewFile,BufRead *.json setf javascript
+" allow per project .vimrc settings
+set exrc
