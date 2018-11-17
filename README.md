@@ -80,3 +80,14 @@ Lets say you want to display the delta symbol which in the table would look like
 To get this symbol, press CTRL+k DE when in insert mode.
 
 
+### Misc
+You can use `gf` to open the file under the cursor.
+And you can use CTRL-W + CTRL-F to open the file in a new tab.
+
+You can add paths specific to you project by adding a `.vimrc` file to the 
+root directory:
+```console
+ let &path.="deps/v8/include,"
+```
+And you can add this `.vimrc` to the local git exclude file(`.git/info/exclude)
+
