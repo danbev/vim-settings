@@ -91,3 +91,15 @@ root directory:
 ```
 And you can add this `.vimrc` to the local git exclude file(`.git/info/exclude)
 
+File explorer:
+```console
+:e . 
+```
+
+wildmenu can be enabled with:
+```console
+: wildmenu
+```
+When you search for a file, for example e: src/*native<tab> you'll see a tabbed
+meny with choices where you can use CTRL+N, CTRL+P to navigate and press enter
+on a selection to open.
