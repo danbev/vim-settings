@@ -31,3 +31,7 @@ set secure
 
 set colorcolumn=80
 highlight ColorColumn ctermbg=darkgray
+
+let g:clang_format_path = '/usr/local/opt/llvm/bin/clang-format'
+map <C-K> :py3f /Users/danielbevenius/work/vim/vim-settings/clang-format.py<cr>
+imap <C-K><c-o>:py3f /Users/danielbevenius/work/vim/vim-settings/clang-format.py<cr>

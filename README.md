@@ -103,3 +103,7 @@ wildmenu can be enabled with:
 When you search for a file, for example e: src/*native<tab> you'll see a tabbed
 meny with choices where you can use CTRL+N, CTRL+P to navigate and press enter
 on a selection to open.
+
+
+### clang-format
+Can be used to help format source code. Can be run by using CTRL+K.
