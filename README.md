@@ -107,3 +107,16 @@ on a selection to open.
 
 ### clang-format
 Can be used to help format source code. Can be run by using CTRL+K.
+
+
+### Make
+Run make from with in vim:
+```
+:make -j8 test
+```
+You might have to filter the source path so that you can autmatically jump to
+the file where an error is. This is what I have set up for node (.vimrc):
+```console
+set makeprg=make\ -j8\ 2>&1\ \\\|\ sed\ 's/\\.\\.\\/src/\\.\\/src/g'
+```
+
