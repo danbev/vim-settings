@@ -126,3 +126,8 @@ With this configuration you can open manpages from within vim:
 ```
 :Man SSL_CTX_set_default_verify_paths
 ```
+You can yank a function name for example and then enter:
+```
+:Man CTRL+R *
+```
+That last part will paste the function name you just yanked.
