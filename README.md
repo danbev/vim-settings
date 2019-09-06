@@ -120,3 +120,9 @@ the file where an error is. This is what I have set up for node (.vimrc):
 set makeprg=make\ -j8\ 2>&1\ \\\|\ sed\ 's/\\.\\.\\/src/\\.\\/src/g'
 ```
 
+
+### Man pages
+With this configuration you can open manpages from within vim:
+```
+:Man SSL_CTX_set_default_verify_paths
+```
