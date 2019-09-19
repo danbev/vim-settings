@@ -83,6 +83,7 @@ To get this symbol, press CTRL+k DE when in insert mode.
 ### Misc
 You can use `gf` to open the file under the cursor.
 And you can use CTRL-W + CTRL-F to open the file in a new tab.
+To return use CTRL+O.
 
 You can add paths specific to you project by adding a `.vimrc` file to the 
 root directory:
