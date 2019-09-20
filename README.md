@@ -79,6 +79,19 @@ Lets say you want to display the delta symbol which in the table would look like
 
 To get this symbol, press CTRL+k DE when in insert mode.
 
+### Jumplists
+CTRL+O  Go to next in jumplist
+CTRL+I  Go to previous in jumplist
+
+To show the jumplist
+```console
+:jumps
+```
+And to clear the list:
+```
+:clearjumps
+```
+
 
 ### Misc
 You can use `gf` to open the file under the cursor.
