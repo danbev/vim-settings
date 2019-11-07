@@ -156,3 +156,7 @@ limits C++ header:
 :Hlimits
 ```
 
+### reload .vimrc without closing file
+```console
+:so $MYVIMRC
+```
