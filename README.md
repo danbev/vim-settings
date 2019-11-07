@@ -71,7 +71,7 @@ Update your `~/.ctags` file to include:
 ### Math symbols
 To enter math (and greek) symbols in Vi you can use digraphs to see the available symbols:
 
-	:digraphs
+	:digraphs!
 
 Lets say you want to display the delta symbol which in the table would look like this:
 
