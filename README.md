@@ -145,3 +145,14 @@ You can yank a function name for example and then enter:
 :Man CTRL+R *
 ```
 That last part will paste the function name you just yanked.
+
+
+### C/C++ header commands
+There are commands in `.vimrc` that allow for searching for usages of C/C++
+headers. The commands are prefixed with a capitcal H. 
+For example, the following will search for the usage of anything from the
+limits C++ header:
+```console
+:Hlimits
+```
+
