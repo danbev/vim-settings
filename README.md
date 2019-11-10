@@ -118,6 +118,23 @@ When you search for a file, for example e: src/*native<tab> you'll see a tabbed
 meny with choices where you can use CTRL+N, CTRL+P to navigate and press enter
 on a selection to open.
 
+### search forward/backwards
+I use `*` lot to search forward for the string under the curor, but you can
+also use `#` to search backwards.
+
+### paste with indenting
+`]p`
+
+
+### Go to definition
+`gd`
+
+### Go to the man page
+`K` will take you to the man page of the word under the cursor.
+
+### registers
+Show all registers
+`:reg`
 
 ### clang-format
 Can be used to help format source code. Can be run by using CTRL+K.
@@ -133,6 +150,16 @@ the file where an error is. This is what I have set up for node (.vimrc):
 ```console
 set makeprg=make\ -j8\ 2>&1\ \\\|\ sed\ 's/\\.\\.\\/src/\\.\\/src/g'
 ```
+
+This works but it will take up the entire vim session and you won't be
+able to continue working until it has completed. 
+You can use a tab with a new terminal:
+```console
+:tab terminal
+```
+And run the command there and you be able to continue working in the other
+tabs.
+You can use `CTRL-W N` to go back to tabmode and the continue working.
 
 
 ### Man pages
