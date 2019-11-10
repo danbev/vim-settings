@@ -139,6 +139,12 @@ Show all registers
 ### clang-format
 Can be used to help format source code. Can be run by using CTRL+K.
 
+### visual selection
+This means that you will visually (the character/line will be highlighted) and
+you can navigate h/j/k/l.
+* `v` select character
+* `V` select row
+
 
 ### Make
 Run make from with in vim:
