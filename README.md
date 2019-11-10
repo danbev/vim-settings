@@ -146,6 +146,13 @@ you can navigate h/j/k/l.
 * `V` select row
 
 
+### Show definitions/macros/functions
+You can use the taglist which will show a buffer with menues with links
+to get an overview and easy navigation:
+```
+:TlistToggle
+```
+
 ### Make
 Run make from with in vim:
 ```
