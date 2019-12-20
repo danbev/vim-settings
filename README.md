@@ -200,3 +200,10 @@ limits C++ header:
 ```console
 :so $MYVIMRC
 ```
+
+### Paste register contents in command
+You put any janked text into a command. For example, if you want to search
+for something, jank it and then:
+```
+:Ag CTRL+R 0 src
+```
