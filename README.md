@@ -25,6 +25,12 @@ You navigate as you normally with a [split view](#split-view-navigation) would a
 
 	:Ag {pattern} [{directory}]
 
+You can create a .vimrc in the projects directoy to specify paths that Ag
+uses to search. For example:
+```console
+let &path.="src,deps/v8/include,lib,deps/openssl/openssl/include,deps/uv"
+```
+
 ### Split view navigation
 The tree is just a buffer and you navigate as you would with a split view:
 
