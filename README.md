@@ -224,4 +224,4 @@ in multiple repositories. You can how the complete path using `1 CTRL+G`.
 ```
 fT
 ```
-You can then use `;` to find the next match.
+You can then use `;` to find the next match, and `,` to find the previous.
