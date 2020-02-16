@@ -218,3 +218,10 @@ for something, jank it and then:
 You can show the name of the current file using `CTRL+G` but that does not show
 the complete path. I often have a README.md file open which has the same name
 in multiple repositories. You can how the complete path using `1 CTRL+G`.
+
+
+### Find next/previous
+```
+fT
+```
+You can then use `;` to find the next match.
