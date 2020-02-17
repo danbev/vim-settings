@@ -225,3 +225,11 @@ in multiple repositories. You can how the complete path using `1 CTRL+G`.
 fT
 ```
 You can then use `;` to find the next match, and `,` to find the previous.
+
+### Repeat last command
+The `.` operator will redo the latest command from when you were in insert mode
+but if we run a command in ex mode that will not redo it. Instead you can use:
+```
+@:
+```
+For example, if you indent using a range and then want to indent again.
