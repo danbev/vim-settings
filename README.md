@@ -233,3 +233,20 @@ but if we run a command in ex mode that will not redo it. Instead you can use:
 @:
 ```
 For example, if you indent using a range and then want to indent again.
+
+### Navigation in vim
+```
+w   jump to beginning of next word
+e   jump to end of next word
+0   jump to beginning on line
+$   jump to end of line
+```
+
+### Navigation in shell
+```
+ALT+f    jump forword one line
+ALT+b    jump backwards one line
+CTRL+A   jump to beginning on line
+CTRL+E   jump to end of line
+```
+
