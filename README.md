@@ -250,3 +250,11 @@ CTRL+A   jump to beginning on line
 CTRL+E   jump to end of line
 ```
 
+### Remove whitespace at end of line
+I never seem to remember this
+```console
+1917,1966s/\s\+$//e
+```
+So that is the normal `/s` for search, the whitspace regex `\s` followed
+one or more times `\+`, followed by the end of line anchor `$`. This replaced
+with nothing `//`, and finally errors are not reported if there is no match.
