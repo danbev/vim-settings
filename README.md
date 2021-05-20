@@ -258,3 +258,9 @@ I never seem to remember this
 So that is the normal `/s` for search, the whitspace regex `\s` followed
 one or more times `\+`, followed by the end of line anchor `$`. This replaced
 with nothing `//`, and finally errors are not reported if there is no match.
+
+### Syntactic
+To add an include path one can update/add .vimrc in the projects directory:
+```text
+let g:syntastic_cpp_include_dirs = ['src/crypto' ]
+```
