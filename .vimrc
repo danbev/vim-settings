@@ -95,3 +95,5 @@ execute "digraphs wS " . 0x02b7
 execute "digraphs xS " . 0x02e3
 execute "digraphs yS " . 0x02b8
 execute "digraphs zS " . 0x1dbb
+
+let g:syntastic_markdown_checkers=['']
