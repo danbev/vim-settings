@@ -124,6 +124,10 @@ When you search for a file, for example e: src/*native<tab> you'll see a tabbed
 meny with choices where you can use CTRL+N, CTRL+P to navigate and press enter
 on a selection to open.
 
+### Move a tab
+To rotate a tab up/left: CTRL+W + R
+To rotate a tab down/right: CTRL+W + r
+
 ### search forward/backwards
 I use `*` lot to search forward for the string under the curor, but you can
 also use `#` to search backwards.
