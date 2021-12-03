@@ -97,3 +97,5 @@ execute "digraphs yS " . 0x02b8
 execute "digraphs zS " . 0x1dbb
 
 let g:syntastic_markdown_checkers=['']
+
+set wildignore+=*.elf,*.hex,*.map,*.jpg
