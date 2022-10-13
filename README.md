@@ -279,3 +279,14 @@ In `/.vim/coc-settings.json` I've added the following configuration options:
 ```
 The first one is a type in which can be a useful when writing code and you
 are not sure of the types being used.
+
+### Disable rustfmt on save
+Sometimes it useful to disable rustfmt when making a change as otherwise rustfmt
+migth make other changes. This is a setting in .vimrc:
+```console
+let g:rustfmt_autosave = 1
+``
+Setting that to 0 and then sourceing .vimrc worked for me.
+```console
+:source ~/.vimrc
+```
