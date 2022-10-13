@@ -268,3 +268,14 @@ To add an include path one can update/add .vimrc in the projects directory:
 ```text
 let g:syntastic_cpp_include_dirs = ['src/crypto' ]
 ```
+
+### Rust analyser
+In `/.vim/coc-settings.json` I've added the following configuration options:
+```console
+{
+  "rust-analyzer.inlayHints.enable": true,
+  "rust-analyzer.lens.enable": false
+}
+```
+The first one is a type in which can be a useful when writing code and you
+are not sure of the types being used.
