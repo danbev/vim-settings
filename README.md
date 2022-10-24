@@ -290,3 +290,8 @@ Setting that to 0 and then sourceing .vimrc worked for me.
 ```console
 :source ~/.vimrc
 ```
+
+Reload rust-analyzer:
+```
+:CocCommand rust-analyzer.reload
+```
