@@ -295,3 +295,49 @@ Reload rust-analyzer:
 ```
 :CocCommand rust-analyzer.reload
 ```
+
+## Toggle an option
+This can be done using `!`, for example:
+```console
+: set nu!
+```
+
+## Check an option
+```console
+: set nu?
+```
+This will output `nonumber` is this option is currently not set..
+
+### key bindings
+There are special charaters that can be used in key bindings.
+
+Basic mapping:
+```
+:nmap - ~
+```
+Here we are mapping `-` when in normal mode, which is what the `n` prefix to
+map means, to be ~ which turn the character under to uppercase.
+
+We can also use <c-b> which means control+b when mapping:
+```
+:nmap <c-b> dw
+```
+
+We can also map keys in visual mode using vmap, and insertmode bindins with
+imap.
+
+
+### Buffers
+List the current buffers:
+```console
+:buffers
+```
+or 
+```console
+:ls
+```
+
+Jump to a buffer:
+```console
+:b <buffer-number | filename>
+```
