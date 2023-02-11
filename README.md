@@ -60,7 +60,16 @@ Using ex mode:
 
     :tag symbolname
     :ta symbolname
+
+List all the tags for symbolname. So place the cursor on the symbol and then
+enter the following command and a menu with the matches will be displayed:
+```console
     :ts
+```
+Or enter the symbol with the command.
+```console
+    :ts something
+```
 
 #### JavaScript
 Update your `~/.ctags` file to include:
