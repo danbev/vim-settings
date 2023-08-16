@@ -350,3 +350,20 @@ Jump to a buffer:
 ```console
 :b <buffer-number | filename>
 ```
+
+### Key mappings
+If you are having issues getting key mapping to work you can run the following
+command in a terminal:
+```console
+$ sed -n l
+```
+And then type the key combination you are trying to map. This will show you
+the characters that are being sent to vim. For example, if you want to map
+`<ALT-a>` you might see something like this:
+```console
+^[[a
+``` 
+Then you can try adding a keymapping for this in vim using:
+```console
+:map <ESC>a :echo "bajja"<CR>
+```
