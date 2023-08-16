@@ -367,3 +367,19 @@ Then you can try adding a keymapping for this in vim using:
 ```console
 :map <ESC>a :echo "bajja"<CR>
 ```
+
+### Copilot settings
+```
+let g:copilot_filetypes = {
+    \ 'gitcommit': v:true,
+    \ 'markdown': v:true,
+    \ 'yaml': v:true
+    \ }
+
+imap <C-p> <Plug>(copilot-next)
+imap <C-n> <Plug>(copilot-previous)
+imap <C-s> <Plug>(copilot-suggest)
+nmap <C-p> :Copilot split<CR>
+
+set nopaste
+```
