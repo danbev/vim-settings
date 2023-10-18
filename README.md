@@ -31,6 +31,13 @@ uses to search. For example:
 let &path.="src,deps/v8/include,lib,deps/openssl/openssl/include,deps/uv"
 ```
 
+It can be useful to have Ag ignore certain files which can be done by creating
+a file named `.agignore` the user home directory, for example to ignore all
+the tag files created by rusty-tags:
+```
+*.vi
+```
+
 ### Split view navigation
 The tree is just a buffer and you navigate as you would with a split view:
 
@@ -382,4 +389,14 @@ imap <C-s> <Plug>(copilot-suggest)
 nmap <C-p> :Copilot split<CR>
 
 set nopaste
+```
+
+### Commenting out range of lines
+First visually select the lines in question and then run:
+```console
+: norm i#
+```
+To uncomment, agains visually select the lines and then run:
+```console
+: norm x
 ```
