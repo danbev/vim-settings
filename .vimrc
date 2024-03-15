@@ -107,14 +107,14 @@ execute "digraphs zS " . 0x1dbb
 let g:syntastic_disabled_filetypes=['mdl']
 let g:syntastic_markdown_checkers=['']
 
-let g:syntastic_rust_checkers=['']
+let g:syntastic_rust_checkers=['rustc']
 let g:syntastic_check_on_open = 0
 
 let g:syntastic_ignore_files = ['.s']
 
-"autocmd BufRead *.rs :setlocal tags=./rusty-tags.vi;/
-autocmd BufRead *.rs :setlocal tags=./rusty-tags.vi;/,$RUST_SRC_PATH/rusty-tags.vi
-autocmd BufWritePost *.rs :silent! exec "!rusty-tags vi --quiet --start-dir=" . expand('%:p:h') . "&" | redraw!
+autocmd BufRead *.rs :setlocal tags=./rusty-tags.vi;/
+"autocmd BufRead *.rs :setlocal tags=./rusty-tags.vi;/,$RUST_SRC_PATH/rusty-tags.vi
+"autocmd BufWritePost *.rs :silent! exec "!rusty-tags vi --quiet --start-dir=" . expand('%:p:h') . "&" | redraw!
 
 set wildignore+=*.elf,*.hex,*.map,*.jpg,*.lst,*.o
 
@@ -171,3 +171,29 @@ nmap <silent> ]g <Plug>(coc-diagnostic-next)
 "
 "
 nnoremap <c-n> :buffers<CR>:buffer<Space>
+
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+let g:copilot_filetypes = {
+    \ 'gitcommit': v:true,
+    \ 'markdown': v:true,
+    \ 'yaml': v:true
+    \ }
+
+imap <C-p> <Plug>(copilot-next)
+imap <C-n> <Plug>(copilot-previous)
+imap <C-s> <Plug>(copilot-suggest)
+"nmap <C-p> :Copilot split<CR>
+"imap <silent> <C-o> :Copilot split<CR>
+inoremap <C-o> <Esc>:Copilot panel<CR>i
+
+set nopaste
+
+nmap <C-d> :NERDTreeToggle<CR>
+autocmd BufEnter *.tpp :setlocal filetype=cpp
+
+"nmap <C-a> :CocAction('codeAction')<CR>
+"nmap <C-a>a <Plug>(coc-codeaction)
+nmap <C-a> :call CocActionAsync('codeAction', 'cursor')<CR>
+
+
