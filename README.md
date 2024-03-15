@@ -400,3 +400,11 @@ To uncomment, agains visually select the lines and then run:
 ```console
 : norm x
 ```
+
+### Rust use/imports
+To autmoatically add use statements for a symbol under the cursor you can use
+the following keyboard shortcut:
+```
+CTRL+A
+```
+This will bring up a menu if there are multiple mathes.
